@@ -34,7 +34,7 @@ cd laravel-vue-manning/
 ```
 
 
-##　追加のライブラリ
+## 追加のライブラリ
 
 - vue-router
 
