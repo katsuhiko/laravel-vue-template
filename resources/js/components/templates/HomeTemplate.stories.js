@@ -1,12 +1,5 @@
 import { storiesOf, addDecorator } from '@storybook/vue'
-import HeaderContent from '../molecules/HeaderContent.vue'
-import FooterContent from '../molecules/FooterContent.vue'
-
-const layout = (() => ({
-  components: { HeaderContent, FooterContent },
-  template: "<v-app><header-content></header-content><story/><footer-content></footer-content></v-app>"
-}))
-
+import layout from './StoryTemplateLayout'
 import HomeTemplate from './HomeTemplate.vue'
 
 storiesOf('templates/home-template', module)
