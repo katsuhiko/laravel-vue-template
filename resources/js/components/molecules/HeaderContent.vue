@@ -1,18 +1,25 @@
 <script>
+import ToolbarContent from './ToolbarContent.vue'
+import MenuContent from './MenuContent.vue'
+
 export default {
-  methods: {
-    onOpen() {
-      this.$emit('input', true)
+  data() {
+    return {
+      drawer: false
     }
+  },
+  components: {
+    ToolbarContent,
+    MenuContent
   }
 }
 </script>
 
 <template>
-  <v-toolbar dark fixed app>
-    <v-toolbar-side-icon @click.stop="onOpen"></v-toolbar-side-icon>
-    <v-toolbar-title>LaravelVueTemplate</v-toolbar-title>
-  </v-toolbar>
+  <div>
+    <menu-content v-model="drawer"></menu-content>
+    <toolbar-content v-model="drawer"></toolbar-content>
+  </div>
 </template>
 
 <style scoped>
