@@ -40,9 +40,7 @@ export default {
       <v-toolbar-title>LaravelVueTemplate</v-toolbar-title>
     </v-toolbar>
 
-    <v-content>
-      <RouterView />
-    </v-content>
+    <RouterView />
 
     <v-footer dark app>
       <v-spacer></v-spacer>
