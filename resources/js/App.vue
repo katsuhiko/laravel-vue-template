@@ -1,5 +1,15 @@
+<script>
+export default {
+  data() {
+    return {
+      drawer: null
+    }
+  }
+}
+</script>
+
 <template>
-  <v-app id="inspire">
+  <v-app>
     <v-navigation-drawer
       fixed
       v-model="drawer"
@@ -40,13 +50,3 @@
     </v-footer>
   </v-app>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      drawer: null
-    }
-  }
-}
-</script>

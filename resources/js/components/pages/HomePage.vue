@@ -1,9 +1,13 @@
+<script>
+import HomeTemplate from '../templates/HomeTemplate.vue'
+
+export default {
+  components: {
+    'home-template': HomeTemplate
+  }
+}
+</script>
+
 <template>
-  <v-container fluid fill-height>
-    <v-layout justify-center align-center>
-      <v-flex text-xs-center>
-        <span>Home</span>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <home-template>Home</home-template>
 </template>

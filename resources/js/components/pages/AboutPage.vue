@@ -1,9 +1,13 @@
+<script>
+import AboutTemplate from '../templates/AboutTemplate.vue'
+
+export default {
+  components: {
+    'about-template': AboutTemplate
+  }
+}
+</script>
+
 <template>
-  <v-container fluid fill-height>
-    <v-layout justify-center align-center>
-      <v-flex text-xs-center>
-        <span>Abount</span>
-      </v-flex>
-    </v-layout>
-  </v-container>
+  <about-template>About</about-template>
 </template>
