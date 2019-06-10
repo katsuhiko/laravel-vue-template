@@ -1,11 +1,11 @@
-# Laravel Vue Manning
+# Laravel Vue Template
 
 
 ## インストール
 
 ```
-git clone https://github.com/katsuhiko/laravel-vue-manning.git
-cd laravel-vue-manning
+git clone https://github.com/katsuhiko/laravel-vue-template.git
+cd laravel-vue-template
 
 docker run --rm -it -v $(pwd):/home/app -w /home/app node:10.16 npm install
 
@@ -26,11 +26,11 @@ apt-get update
 apt-get upgrade -y
 apt-get install -y git libzip-dev zip unzip
 docker-php-ext-install zip
-php composer.phar create-project --prefer-dist laravel/laravel laravel-vue-manning
-cp composer.phar ./laravel-vue-manning/
+php composer.phar create-project --prefer-dist laravel/laravel laravel-vue-template
+cp composer.phar ./laravel-vue-template/
 exit
 
-cd laravel-vue-manning/
+cd laravel-vue-template/
 ```
 
 
